@@ -11,7 +11,7 @@ int isKeyword(char *word) // Function to check whether the given word is a keywo
 {
     int i; // Variable used to go through the keyword list
 
-    for(i=0;i<32;i++) // Check each keyword one by one
+    for(i=0;i<sizeof(keyword)/sizeof(keyword[0]);i++) // Check each keyword one by one
     {
         if(strcmp(word,keyword[i])==0) // Compare the word with the current keyword
             return 1; // Return 1 if the word matches a keyword
