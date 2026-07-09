@@ -1,5 +1,3 @@
-
-
 // Name : Ramanesh M
 // Batch : 25039 - 003
 // Date of completion : 04/07/2026
@@ -27,7 +25,10 @@ int main(int argc, char* argv[]) // Main function where execution starts
 
     printf("%-20s %-40s\n","LEXEME","TOKEN"); // Print the table heading
     printf("\n"); // Leave one empty line for better readability
+
     tokenize(fp); // Start reading and identifying tokens
+
+    displayErrors(); // Display lexical errors if present
 
     fclose(fp); // Close the opened file
 
